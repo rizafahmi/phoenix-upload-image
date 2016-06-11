@@ -7,6 +7,8 @@ defmodule UploadImage.Avatar do
   # To add a thumbnail version:
   @versions [:original, :thumb]
 
+  @acl :public_read
+
   # Whitelist file extensions:
   # def validate({file, _}) do
   #   ~w(.jpg .jpeg .gif .png) |> Enum.member?(Path.extname(file.file_name))

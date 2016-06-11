@@ -19,7 +19,7 @@ defmodule UploadImage.Mixfile do
   def application do
     [mod: {UploadImage, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :ex_aws, :httpoison]]
   end
 
   # Specifies which paths to compile per environment.
@@ -38,6 +38,9 @@ defmodule UploadImage.Mixfile do
      {:gettext, "~> 0.9"},
      {:arc_ecto, "~> 0.3.1"},
      {:arc, "0.2.0"},
+     {:ex_aws, "~> 0.4.10"},
+     {:httpoison, "~> 0.7"},
+     {:poison, "~> 1.2"},
      {:cowboy, "~> 1.0"}]
   end
 
