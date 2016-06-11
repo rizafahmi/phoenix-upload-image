@@ -1,0 +1,4 @@
+LOG:  database system was shut down at 2016-05-17 14:48:06 SGT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
