@@ -1,0 +1,23 @@
+<h2>Show user</h2>
+
+<ul>
+
+  <li>
+    <strong>Avatar:</strong>
+    <img width="200px" src="<%= UploadImage.Avatar.url({@user.avatar, @user}) %>" />
+  </li>
+
+  <li>
+    <strong>Username:</strong>
+    <%= @user.username %>
+  </li>
+
+  <li>
+    <strong>Password:</strong>
+    <%= @user.password %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: user_path(@conn, :edit, @user) %>
+<%= link "Back", to: user_path(@conn, :index) %>
